@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-ink-900 bg-white antialiased;
+  }
+}
+
+@layer components {
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-blue-primary hover:bg-blue-hover text-white font-semibold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-primary/30;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-ink-900 text-ink-900 hover:bg-ink-900 hover:text-white font-semibold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/20;
+  }
+
+  .btn-ghost-white {
+    @apply inline-flex items-center gap-2 border border-white/40 text-white hover:bg-white hover:text-ink-900 font-semibold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white/20;
+  }
+
+  /* ── Section layout ── */
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+
+  .section-label {
+    @apply inline-block text-xs font-semibold tracking-widest uppercase text-blue-primary mb-4;
+  }
+
+  .section-title {
+    @apply font-display font-bold text-ink-900 leading-tight tracking-tight;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.025em;
+  }
+
+  .section-title-white {
+    @apply font-display font-bold text-white leading-tight tracking-tight;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.025em;
+  }
+
+  /* ── Cards ── */
+  .card-editorial {
+    @apply border-t border-ink-200 pt-6 pb-8;
+  }
+
+  /* ── Divider ── */
+  .hr-thin {
+    @apply border-t border-ink-100;
+  }
+}
+
+/* Smooth font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #fff; }
+::-webkit-scrollbar-thumb { background: #1B6FF8; border-radius: 10px; }
