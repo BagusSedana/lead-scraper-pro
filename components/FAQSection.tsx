@@ -4,28 +4,28 @@ import ScrollReveal from './ScrollReveal'
 
 const faqs = [
   {
-    q: 'Berapa lama proses pembuatan website di bangbisnis?',
-    a: 'Waktu penyelesaian bervariasi, namun secara umum memakan waktu sekitar 7-14 hari kerja tergantung pada kompleksitas website dan kelengkapan materi dari klien.',
+    q: 'Saya gaptek, apakah bakal ribet ngurus websitenya?',
+    a: 'Tenang, gak ribet sama sekali. Kita bikin sistemnya simpel banget. Pas udah live, kita bakal ajarin cara ganti menu atau harga pake HP aja. Kalo mentok, tinggal chat kita!',
   },
   {
-    q: 'Apakah saya perlu menyiapkan hosting dan domain?',
-    a: 'Tidak perlu repot. Semua paket kami (kecuali layanan desain UI saja) sudah otomatis termasuk gratis Domain .com/.id dan Hosting berkualitas selama 1 tahun pertama.',
+    q: 'Berapa lama website saya bisa live?',
+    a: 'Normalnya pengerjaan 7-14 hari kerja setelah semua info (foto/menu) lengkap. Kita gak suka tunda-tunda kerjaan.',
   },
   {
-    q: 'Apakah saya bisa mengelola website sendiri nanti?',
-    a: 'Tentu saja. Kami menggunakan sistem CMS (Content Management System) yang mudah digunakan. Kami juga akan memberikan panduan cara mengelola konten website Anda sendiri.',
+    q: 'Bisa bantu daftarin ke Google Maps gak?',
+    a: 'Bisa banget! Itu udah sepaket. Kita bantu hubungin titik Maps usaha kamu sama website barunya biar makin gampang dicari wisatawan.',
   },
   {
-    q: 'Bagaimana jika website saya bermasalah setelah selesai?',
-    a: 'Tenang, kami memberikan garansi dan gratis layanan support (maintenance ringan) selama 1-6 bulan tergantung paket Anda. Setelah masa itu berakhir, ada paket maintenance lanjutan yang sangat terjangkau.',
+    q: 'Apakah bisa DP atau dicicil?',
+    a: 'Bisa. Kita paham kebutuhan UMKM. Pembayaran bisa DP dulu, sisanya pas website udah siap tayang. Gak ada biaya tersembunyi.',
   },
   {
-    q: 'Apakah website saya akan muncul di Google?',
-    a: 'Ya, struktur website kami sudah dirancang SEO-friendly sejak tahap pengembangan dasar. Kami juga mendaftarkan website Anda ke Google Search Console. Namun, untuk tampil di halaman pertama mungkin memerlukan optimasi SEO lanjutan.',
+    q: 'Kalo belum ada domain/hosting gimana?',
+    a: 'Gak perlu pusing. Semua paket kita udah gratis Domain (.com / .id) sama Hosting premium buat 1 tahun pertama. Kamu terima beres aja.',
   },
   {
-    q: 'Apa bedanya bangbisnis dengan jasa website murah lainnya?',
-    a: 'Kami tidak sekadar menjual "template jadi". Kami memikirkan struktur konten, navigasi user, branding, kecepatan akses, dan keamanan. Anda mendapatkan partner teknis, bukan sekadar tukang instal website.',
+    q: 'Bang Bisnis lokasinya di mana? Bisa ketemu?',
+    a: 'Kita ada di Bali! Kalo mau ngobrol santai sambil ngopi buat jelasin konsep websitenya, kita atur jadwal aja. Chat aja dulu!',
   },
 ]
 
@@ -51,14 +51,14 @@ export default function FAQSection() {
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
                 <h3 className={`font-display font-bold text-xl transition-colors pr-8 ${
-                  openIndex === i ? 'text-blue-primary' : 'text-ink-900 group-hover:text-blue-primary'
+                  openIndex === i ? 'text-accent-primary' : 'text-ink-900 group-hover:text-accent-primary'
                 }`}>
                   {faq.q}
                 </h3>
                 <span className={`flex-shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
                   openIndex === i 
-                    ? 'border-blue-primary bg-blue-primary text-white rotate-45' 
-                    : 'border-ink-200 text-ink-400 group-hover:border-blue-primary group-hover:text-blue-primary'
+                    ? 'border-accent-primary bg-accent-primary text-white rotate-45' 
+                    : 'border-ink-200 text-ink-400 group-hover:border-accent-primary group-hover:text-accent-primary'
                 }`}>
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />

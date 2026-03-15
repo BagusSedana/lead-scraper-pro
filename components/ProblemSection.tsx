@@ -3,23 +3,23 @@ import ScrollReveal from './ScrollReveal'
 const problems = [
   {
     num: '01',
-    title: 'Hanya Andalkan Medsos',
-    desc: 'Bisnis hanya mengandalkan Instagram atau WhatsApp, tanpa kehadiran digital yang lebih profesional.',
+    title: 'Hanya Andalkan Instagram',
+    desc: 'Banyak usaha di Bali cuma punya IG. Padahal saat turis cari di Google, bisnis yang punya website resmi jauh lebih dipercaya.',
   },
   {
     num: '02',
-    title: 'Sulit Ditemukan di Google',
-    desc: 'Pelanggan tidak bisa menemukan bisnis Anda di mesin pencari, sehingga kehilangan banyak potensi pelanggan baru.',
+    title: 'Ghaib di Google Maps',
+    desc: 'Bisa muncul di Maps itu wajib, tapi punya website di profil Gmaps bikin usaha kamu prioritas dan terlihat lebih niat bisnis.',
   },
   {
     num: '03',
-    title: 'Tampilan Kurang Profesional',
-    desc: 'Tanpa website yang baik, bisnis Anda terlihat kurang kredibel dibanding kompetitor yang sudah online.',
+    title: 'Chat Masuk Berantakan',
+    desc: 'Tanpa website, kamu harus jelasin menu/harga berkali-kali di WA. Link website bikin info rapi dan kamu tinggal terima pesanan.',
   },
   {
     num: '04',
-    title: 'Informasi Tidak Terpusat',
-    desc: 'Informasi produk, layanan, dan kontak tersebar di berbagai platform, membuat pelanggan bingung dan kehilangan kepercayaan.',
+    title: 'Kalah Saing sama Pendatang',
+    desc: 'Bisnis baru yang punya website tampak lebih elit dan sering dipilih pelanggan dibanding bisnis lama yang tidak go digital.',
   },
 ]
 
@@ -31,15 +31,15 @@ export default function ProblemSection() {
           {/* Left: Sticky Headline */}
           <div className="lg:col-span-5 relative">
             <div className="sticky top-32">
-              <ScrollReveal><p className="section-label">Masalah Umum</p></ScrollReveal>
+              <ScrollReveal><p className="section-label-accent">Fakta Lapangan</p></ScrollReveal>
               <h2 className="section-title mb-6">
-                <ScrollReveal as="span" delay={100}>Mengapa Banyak Bisnis</ScrollReveal><br />
-                <ScrollReveal as="span" delay={200}><span className="text-blue-primary">Kurang Dipercaya</span></ScrollReveal><br />
-                <ScrollReveal as="span" delay={300}>di Internet?</ScrollReveal>
+                <ScrollReveal as="span" delay={100}>Kenapa UMKM Bali</ScrollReveal><br />
+                <ScrollReveal as="span" delay={200}><span className="text-accent-primary">Butuh Website,</span></ScrollReveal><br />
+                <ScrollReveal as="span" delay={300}>Bukan Cuma IG?</ScrollReveal>
               </h2>
               <ScrollReveal delay={400}>
                 <p className="text-ink-600 text-lg leading-relaxed max-w-md mb-8">
-                  Banyak bisnis memiliki produk atau layanan yang bagus, tetapi sulit mendapatkan kepercayaan pelanggan karena kehadiran digital yang kurang profesional.
+                  Wisatawan dan pembeli sekarang cek online dulu (Google Maps, Website) sebelum memutuskan datang atau pesan. Jangan sampai bisnismu terlewatkan.
                 </p>
               </ScrollReveal>
               
@@ -64,7 +64,7 @@ export default function ProblemSection() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-display font-semibold text-2xl text-ink-900 mb-3 group-hover:text-blue-primary transition-colors">{p.title}</h3>
+                    <h3 className="font-display font-semibold text-2xl text-ink-900 mb-3 group-hover:text-accent-primary transition-colors">{p.title}</h3>
                     <p className="text-ink-600 text-base leading-relaxed">{p.desc}</p>
                   </div>
                 </div>

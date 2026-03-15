@@ -21,58 +21,65 @@ export default function HeroSection() {
         {/* Top row: label + description */}
         <div className="flex items-start justify-between gap-8 mb-12">
           <span className="text-white/60 text-xs font-medium tracking-widest uppercase pt-1">
-            Jasa Website Profesional
+            Bang Bisnis — Bali UMKM Digital Partner
           </span>
           <p className="hidden md:block max-w-xs text-white/70 text-sm leading-relaxed text-right">
-            Membangun kepercayaan bisnis Anda melalui website profesional yang meningkatkan kredibilitas digital.
+            Membantu bisnis lokal di Bali go digital dengan website yang cepat, modern, dan menghasilkan pelanggan.
           </p>
         </div>
 
-        {/* Giant headline */}
-        <div className="mb-10">
-          <h1
-            className="font-display font-bold text-white leading-none tracking-tight flex flex-col gap-2"
-            style={{ fontSize: 'clamp(3.5rem, 9vw, 8rem)', letterSpacing: '-0.04em', lineHeight: '1.05' }}
-          >
-            <ScrollReveal delay={100} as="span">Website</ScrollReveal>
-            <ScrollReveal delay={200} as="span"><span className="text-white/90">Profesional</span></ScrollReveal>
-            <ScrollReveal delay={300} as="span">yang Membangun</ScrollReveal>
-            <ScrollReveal delay={400} as="span">
-              <span
-                className="inline-block pb-4"
-                style={{
-                  background: 'linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
+        {/* Giant headline area with sticker */}
+        <div className="mb-10 relative">
+          {/* Animated Sharper Jagged Sticker */}
+          <div className="absolute -top-14 left-[48%] md:left-[44%] lg:left-[40%] z-20 hidden sm:block">
+            <div className="animate-sticker relative">
+              <div 
+                className="bg-white text-blue-primary font-bold text-[10px] uppercase tracking-tighter px-4 py-4 shadow-xl flex flex-col items-center justify-center text-center w-24 h-24 transform backdrop-blur-sm bg-white/95"
+                style={{ 
+                  clipPath: "polygon(100% 50%, 96.19% 59.75%, 98.48% 70.22%, 89.1% 74.05%, 89.1% 84.15%, 78.43% 84.15%, 74.5% 93.3%, 64.95% 89.5%, 59.75% 96.19%, 50% 90%, 40.25% 96.19%, 35.05% 89.5%, 25.5% 93.3%, 21.57% 84.15%, 10.9% 84.15%, 10.9% 74.05%, 1.52% 70.22%, 3.81% 59.75%, 0% 50%, 3.81% 40.25%, 1.52% 29.78%, 10.9% 25.95%, 10.9% 15.85%, 21.57% 15.85%, 25.5% 6.7%, 35.05% 10.5%, 40.25% 3.81%, 50% 10%, 59.75% 3.81%, 64.95% 10.5%, 74.5% 6.7%, 78.43% 15.85%, 89.1% 15.85%, 89.1% 25.95%, 98.48% 29.78%, 96.19% 40.25%)",
                 }}
               >
-                Kepercayaan
+                <span>100%</span>
+                <span>Digital</span>
+              </div>
+            </div>
+          </div>
+
+          <h1
+            className="font-display font-bold text-white leading-none tracking-tight flex flex-col gap-2"
+            style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', letterSpacing: '-0.04em', lineHeight: '1.1' }}
+          >
+            <ScrollReveal delay={100} as="span">Jasa Website</ScrollReveal>
+            <ScrollReveal delay={200} as="span"><span className="text-white/90">& Landing Page</span></ScrollReveal>
+            <ScrollReveal delay={300} as="span">Untuk UMKM yang Mau</ScrollReveal>
+            <ScrollReveal delay={400} as="span">
+              <span className="inline-block pb-4 text-white">
+                Banyak Pelanggan
               </span>
             </ScrollReveal>
           </h1>
         </div>
 
         {/* Bottom row: CTA + mockup image area */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center pt-20 pb-32">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center pt-20 pb-16">
 
           {/* Left Content */}
           <div className="text-left">
-            <p className="text-white/70 text-sm leading-relaxed mb-8 md:hidden">
-              Membangun kepercayaan bisnis Anda melalui website profesional yang meningkatkan kredibilitas digital.
+            <p className="text-white/80 text-base leading-relaxed mb-8">
+              Desain modern, loading cepat, fokus ke konversi. Cocok untuk F&B, jasa lokal, dan personal brand di Indonesia.
             </p>
 
             <ul className="space-y-4 mb-12">
               {[
-                'Desain profesional & modern',
-                'SEO-friendly dari awal',
-                'Mobile-ready di semua perangkat',
+                'Cocok untuk F&B, jasa, dan usaha lokal di Bali',
+                'Desain simpel, mudah dikelola pemilik usaha',
+                'Support sampai website muncul di Google & Gmaps',
               ].map((b, i) => (
                 <ScrollReveal delay={500 + i * 150} key={i}>
-                  <li className="flex items-center gap-2.5 text-white/80 text-sm">
-                    <div className="w-4 h-4 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  <li className="flex items-center gap-2.5 text-white/85 text-sm font-medium">
+                    <div className="w-5 h-5 rounded-full bg-blue-primary flex items-center justify-center flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     {b}
@@ -83,21 +90,18 @@ export default function HeroSection() {
 
             <ScrollReveal delay={800} className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/6287701785344?text=Halo%20bangbisnis%2C%20saya%20ingin%20konsultasi%20gratis."
+                href="https://wa.me/6287701785344?text=Halo%20Bang%20Bisnis%2C%20saya%20ingin%20konsultasi%20gratis%20untuk%20usaha%20saya."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-white text-ink-900 font-semibold text-sm px-6 py-3 rounded-full hover:bg-ink-100 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-white text-blue-primary font-bold text-base px-8 py-4 rounded-full hover:bg-blue-light transition-all hover:-translate-y-0.5 shadow-lg shadow-white/10"
               >
-                <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                </svg>
-                Konsultasi Gratis
+                Konsultasi Gratis via WhatsApp
               </a>
               <a
-                href="#portfolio"
-                className="inline-flex items-center gap-2 border border-white/30 text-white font-semibold text-sm px-6 py-3 rounded-full hover:bg-white/10 transition-colors"
+                href="#pricing"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-bold text-base px-8 py-4 rounded-full hover:bg-white/10 transition-all hover:-translate-y-0.5"
               >
-                Lihat Portfolio
+                Lihat Paket Harga
               </a>
             </ScrollReveal>
           </div>
@@ -136,15 +140,7 @@ export default function HeroSection() {
                     <div className="h-9 w-24 bg-white/20 rounded-full border border-white/30" />
                   </div>
                 </div>
-                {/* Stats strip */}
-                <div className="flex gap-6 pt-5 border-t border-white/10">
-                  {['5+', '100%', '7 Hari'].map((s, i) => (
-                    <div key={i}>
-                      <div className="text-white font-bold text-sm">{s}</div>
-                      <div className="h-2 bg-white/20 rounded w-14 mt-1" />
-                    </div>
-                  ))}
-                </div>
+
               </div>
             </div>
 
@@ -163,23 +159,7 @@ export default function HeroSection() {
           </ScrollReveal>
         </div>
 
-        {/* Stats strip at very bottom of blue section */}
-        <div className="border-t border-white/10 py-6 flex flex-wrap items-center mt-0">
-          {[
-            { num: '5+', label: 'Bisnis Terbantu' },
-            { num: '100%', label: 'Klien Puas' },
-            { num: '3–7 Hari', label: 'Pengerjaan' },
-            { num: '24/7', label: 'Support' },
-          ].map((s, i) => (
-            <div 
-              key={i} 
-              className={`flex items-center gap-4 px-8 first:pl-0 ${i > 0 ? 'sm:border-l sm:border-white/10' : ''}`}
-            >
-              <span className="font-display font-bold text-white text-2xl tracking-tight">{s.num}</span>
-              <span className="text-white/50 text-xs uppercase tracking-widest">{s.label}</span>
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
   )

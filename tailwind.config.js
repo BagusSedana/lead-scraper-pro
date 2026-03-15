@@ -21,6 +21,11 @@ module.exports = {
           200: '#C8C8D4',
           100: '#F0F0F5',
         },
+        accent: {
+          primary: '#1B6FF8',
+          hover: '#0B57D0',
+          light: '#EBF2FF',
+        },
         surface: '#FAFAFA',
       },
       fontFamily: {

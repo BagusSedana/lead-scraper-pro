@@ -22,10 +22,8 @@ export default function Home() {
         <TrustSection />
         <ProblemSection />
         <SolutionSection />
-        <ServicesSection />
         <PortfolioSection />
         <WhyUsSection />
-        <ProcessSection />
         <TestimonialsSection />
         <PricingSection />
         <FAQSection />

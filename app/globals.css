@@ -20,6 +20,10 @@
     @apply inline-flex items-center gap-2 bg-blue-primary hover:bg-blue-hover text-white font-semibold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-primary/30;
   }
 
+  .btn-accent {
+    @apply inline-flex items-center gap-2 bg-accent-primary hover:bg-accent-hover text-white font-semibold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent-primary/30;
+  }
+
   .btn-outline {
     @apply inline-flex items-center gap-2 border border-ink-900 text-ink-900 hover:bg-ink-900 hover:text-white font-semibold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/20;
   }
@@ -36,6 +40,25 @@
   .section-label {
     @apply inline-block text-xs font-semibold tracking-widest uppercase text-blue-primary mb-4;
   }
+
+  .section-label-accent {
+    @apply inline-block text-xs font-semibold tracking-widest uppercase text-blue-primary mb-4;
+  }
+
+  @keyframes sticker-spin {
+    from { transform: rotate(-5deg); }
+    to { transform: rotate(5deg); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-12deg); }
+    50% { transform: translateY(-10px) rotate(-8deg); }
+  }
+
+  .animate-sticker {
+    animation: float 4s ease-in-out infinite;
+  }
+
 
   .section-title {
     @apply font-display font-bold text-ink-900 leading-tight tracking-tight;

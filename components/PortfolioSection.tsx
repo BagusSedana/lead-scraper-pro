@@ -1,38 +1,47 @@
 import Link from 'next/link'
 import ScrollReveal from './ScrollReveal'
 
+import { portfolios } from '@/data/portfolio'
+
 const portfolioItems = [
   {
-    title: 'Cipta Bersama',
-    industry: 'Supplier B2B',
-    desc: 'Website company profile distributor daging premium dengan katalog dan sistem inquiry WhatsApp.',
-    color: 'bg-red-100',
+    title: portfolios[0].client,
+    industry: portfolios[0].industry + ' - Jakarta',
+    desc: portfolios[0].summary,
+    color: 'bg-red-50',
     href: '/portfolio/cipta-bersama',
-    websiteUrl: 'https://cipta-bersama.vercel.app/'
+    websiteUrl: portfolios[0].websiteUrl
   },
   {
-    title: 'TravelJimb',
-    industry: 'Travel & Pariwisata',
-    desc: 'Landing page ultra-minimalis untuk biro perjalanan dengan fokus pada tingginya konversi reservasi.',
-    color: 'bg-blue-100',
+    title: portfolios[1].client,
+    industry: portfolios[1].industry + ' - Kuta',
+    desc: portfolios[1].summary,
+    color: 'bg-blue-50',
     href: '/portfolio/traveljimb',
-    websiteUrl: 'https://traveljimb.vercel.app/'
+    websiteUrl: portfolios[1].websiteUrl
   },
   {
-    title: 'Klinik Sehat Bersama',
-    industry: 'Kesehatan',
-    desc: 'Website klinik kecantikan profesional dengan halaman layanan, dokter, dan booking online.',
-    color: 'bg-teal-100',
+    title: 'Berkah Laundry',
+    industry: 'Jasa - Denpasar',
+    desc: 'Landing page praktis buat jasa laundry biar pelanggan tinggal klik & jemput.',
+    color: 'bg-teal-50',
     href: '#'
   },
   {
-    title: 'Kursus Bahasa Inggris Bali',
-    industry: 'Pendidikan',
-    desc: 'Landing page kursus online dengan sistem pendaftaran dan testimoni siswa.',
-    color: 'bg-yellow-100',
+    title: 'Kopi Senja',
+    industry: 'F&B - Gianyar',
+    desc: 'Profil coffee shop estetik dengan menu digital yang memudahkan pemesanan.',
+    color: 'bg-yellow-50',
     href: '#'
   },
-]
+  {
+    title: 'TechNesia',
+    industry: 'Software - Jakarta',
+    desc: 'Platform solusi IT untuk membantu transformasi digital perusahaan menengah.',
+    color: 'bg-ink-50',
+    href: '#'
+  },
+].slice(0, 4)
 
 export default function PortfolioSection() {
   return (
@@ -97,14 +106,14 @@ export default function PortfolioSection() {
                 <div>
                   <div className="flex items-center justify-between gap-3 mb-3">
                     <div className="flex items-center gap-3">
-                      <h3 className="font-display font-bold text-2xl text-ink-900 group-hover:text-blue-primary transition-colors">
+                      <h3 className="font-display font-bold text-2xl text-ink-900 group-hover:text-accent-primary transition-colors">
                         {item.title}
                       </h3>
                       <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-surface border border-ink-200 text-ink-600">
                         {item.industry}
                       </span>
                     </div>
-                    <div className="w-8 h-8 rounded-full bg-ink-100 flex items-center justify-center text-ink-400 group-hover:bg-blue-primary group-hover:text-white transition-all -rotate-45 group-hover:rotate-0">
+                    <div className="w-8 h-8 rounded-full bg-ink-100 flex items-center justify-center text-ink-400 group-hover:bg-accent-primary group-hover:text-white transition-all -rotate-45 group-hover:rotate-0">
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>

@@ -2,8 +2,8 @@ import ScrollReveal from './ScrollReveal'
 
 const stats = [
   { num: '5+', label: 'Bisnis Terbantu' },
-  { num: '98%', label: 'Klien Puas' },
-  { num: '3–7 Hari', label: 'Pengerjaan' },
+  { num: '100%', label: 'Klien Puas' },
+  { num: '7–14 Hari', label: 'Pengerjaan' },
   { num: '24/7', label: 'Support' },
 ]
 
