@@ -5,7 +5,7 @@ import ScrollReveal from './ScrollReveal'
 const faqs = [
   {
     q: 'Berapa lama proses pembuatan website di bangbisnis?',
-    a: 'Waktu penyelesaian bervariasi. Untuk Landing Page sekitar 3-5 hari. Company Profile 5-7 hari. Toko Online atau sistem custom bisa memakan waktu 14 hari atau lebih tergantung kompleksitas.',
+    a: 'Waktu penyelesaian bervariasi, namun secara umum memakan waktu sekitar 7-14 hari kerja tergantung pada kompleksitas website dan kelengkapan materi dari klien.',
   },
   {
     q: 'Apakah saya perlu menyiapkan hosting dan domain?',

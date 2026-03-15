@@ -70,7 +70,7 @@ export default function Footer() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-white group-hover:text-blue-primary transition-colors">+62 822 5555 1234</p>
+                    <p className="text-sm text-white group-hover:text-blue-primary transition-colors">0877 0178 5344</p>
                     <p className="text-xs text-ink-500 mt-1">Respon cepat via WhatsApp</p>
                   </div>
                 </a>
@@ -83,7 +83,7 @@ export default function Footer() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-ink-400 pt-1.5">hello@bangbisnis.com</p>
+                    <p className="text-sm text-ink-400 pt-1.5">gedebagussedanayoga28@gmail.com</p>
                   </div>
                 </div>
               </li>
