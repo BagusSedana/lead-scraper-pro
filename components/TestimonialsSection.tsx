@@ -8,15 +8,15 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: 'dr. Rina Wijaya',
-    company: 'Klinik Sehat Bersama',
-    quote: 'Sangat puas dengan hasilnya! Pasien kini bisa langsung melihat jadwal praktek dan booking via website. Proses pembuatannya juga cepat.',
+    name: 'Andi Pratama',
+    company: 'Cipta Bersama',
+    quote: 'Sangat puas dengan hasilnya! Website kami kini tampil sangat modern dan kredibel. Klien baru semakin yakin dengan kapabilitas kami. Komunikasi selama pengerjaan juga sangat lancar.',
     rating: 5,
   },
   {
-    name: 'Ahmad Fauzi',
-    company: 'CV Maju Properti',
-    quote: 'Tampilan website sangat premium, membuat klien kami lebih percaya saat melihat katalog properti. Tim bangbisnis juga sangat ramah dan responsif.',
+    name: 'Jimmy Hartono',
+    company: 'Travel Jimb',
+    quote: 'Website travel kami jadi jauh lebih memukau! Tampilan paket wisatanya tertata rapi dan membuat calon pelanggan betah memilih destinasi. Sangat merekomendasikan layanan dari bangbisnis.',
     rating: 5,
   },
 ]
