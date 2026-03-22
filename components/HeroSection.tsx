@@ -21,10 +21,10 @@ export default function HeroSection() {
         {/* Top row: label + description */}
         <div className="flex items-start justify-between gap-8 mb-12">
           <span className="text-white/60 text-xs font-medium tracking-widest uppercase pt-1">
-            Bang Bisnis — Bali UMKM Digital Partner
+            Bang Bisnis — Bali & International UMKM Digital Partner
           </span>
           <p className="hidden md:block max-w-xs text-white/70 text-sm leading-relaxed text-right">
-            Membantu bisnis lokal di Bali go digital dengan website yang cepat, modern, dan menghasilkan pelanggan.
+            Membantu bisnis lokal di Bali & International go digital dengan website yang cepat, modern, dan menghasilkan pelanggan.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function HeroSection() {
 
             <ul className="space-y-4 mb-12">
               {[
-                'Cocok untuk F&B, jasa, dan usaha lokal di Bali',
+                'Cocok untuk F&B, jasa, dan usaha lokal di Bali & International',
                 'Desain simpel, mudah dikelola pemilik usaha',
                 'Support sampai website muncul di Google & Gmaps',
               ].map((b, i) => (
