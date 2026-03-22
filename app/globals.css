@@ -4,6 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Google Translate Widget Override */
+body {
+  top: 0px !important; 
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+.goog-tooltip {
+  display: none !important;
+}
+.goog-tooltip:hover {
+  display: none !important;
+}
+.goog-text-highlight {
+  background-color: transparent !important;
+  border: none !important; 
+  box-shadow: none !important;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

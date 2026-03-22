@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -57,8 +58,9 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA */}
-        <div className="hidden md:flex">
+        {/* CTA & Language */}
+        <div className="hidden md:flex items-center gap-4">
+          <LanguageSwitcher scrolled={scrolled} />
           <a
             href="https://wa.me/6287701785344?text=Halo%20bangbisnis%2C%20saya%20ingin%20konsultasi%20gratis."
             target="_blank"
@@ -75,7 +77,7 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 ml-auto"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -93,8 +95,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-ink-100">
-          <ul className="px-6 py-4 space-y-1">
+        <div className="md:hidden bg-white border-t border-ink-100 pb-4">
+          <ul className="px-6 py-2 space-y-1">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <a
@@ -106,7 +108,10 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="pt-3">
+            <li className="pt-4 pb-2 flex justify-center">
+              <LanguageSwitcher scrolled={true} />
+            </li>
+            <li className="pt-2">
               <a
                 href="https://wa.me/6287701785344?text=Halo%20bangbisnis%2C%20saya%20ingin%20konsultasi%20gratis."
                 target="_blank"

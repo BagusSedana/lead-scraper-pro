@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import GoogleTranslate from '@/components/GoogleTranslate'
 
 export const metadata: Metadata = {
   title: 'bangbisnis — Jasa Pembuatan Website Profesional untuk Bisnis',
@@ -65,6 +66,8 @@ export default function RootLayout({
         />
       </head>
       <body>
+        {/* Safe Google Translate Initialization */}
+        <GoogleTranslate />
         {children}
         <Analytics />
         <SpeedInsights />

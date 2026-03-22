@@ -168,13 +168,13 @@ export default function PricingSection() {
                 href={`https://wa.me/6287701785344?text=Halo%20Bang%20Bisnis%2C%20saya%20tertarik%20dengan%20paket%20${p.name}.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group w-full flex items-center justify-center gap-2.5 transition-all duration-300 ${
+                className={`group w-full flex flex-col items-center justify-center gap-2.5 transition-all duration-300 min-h-[60px] ${
                   p.popular
                     ? 'bg-blue-primary hover:bg-blue-hover text-white font-bold py-4 rounded-full shadow-lg shadow-blue-primary/20'
-                    : 'btn-outline border-ink-100 hover:border-ink-900 py-4'
+                    : 'btn-outline border-ink-100 hover:border-ink-900 py-4 rounded-full'
                 }`}
               >
-                <span className="font-semibold">{p.price === 'Hubungi' ? 'Konsultasi Sekarang' : `Pilih Paket ${p.name}`}</span>
+                <span className="font-semibold text-center leading-tight">{p.price === 'Hubungi' ? 'Konsultasi Sekarang' : 'Pilih Paket'}</span>
               </a>
             </ScrollReveal>
           ))}
