@@ -31,3 +31,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Lead Scraper Pro Config
+.env
+database.sqlite
+database.sqlite-journal
+leads.json
+test-doku.js
+test-doku2.js
+test-fetch.js
